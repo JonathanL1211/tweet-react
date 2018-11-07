@@ -7,8 +7,8 @@ class Tweets extends React.Component{
                     <img src="ye.jpg" className="image"/>
                     <span className="showProfileNameOnHover">{this.props.details.user.screen_name}</span>
                 </a>
-                <div className="tweet-contents">
-                    <h3><span>{this.props.details.user.name} </span><span>@{this.props.details.user.screen_name}</span></h3>
+                <div className="tweet-contents col-xs-4 col-xs-offset-4">
+                    <h3><span>{this.props.details.user.name} </span><span><img src="twittertick.png" style={{width: "20px"}}/></span><small>@{this.props.details.user.screen_name}</small></h3>
                     <p>{this.props.details.text}</p>
                     <p><span>Retweets: {this.props.details.retweet_count} | Liked: {this.props.details.favorite_count}</span></p>
                 </div>
@@ -26,8 +26,9 @@ class Container extends React.Component{
             return <Tweets details={items} key={items.id}/>
         })
         return (
-            <div className="wrapper">
-                <nav><h3>{tweets[0].user.name}</h3></nav>
+            <div className="wrapper container" style={{padding: "10px"}}>
+                <nav><span><strong>{tweets[0].user.name} </strong></span><span><img src="twittertick.png" style={{width: "20px"}}/></span></nav>
+                <hr/>
                  <ul>
                     {listTweets}
                 </ul>

@@ -1,0 +1,18 @@
+.tweet-contents{
+	display: block;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10vw;
+	margin-left: 5vw;
+	background-color: pink;
+	width: 60vw;
+}
+
+img{
+	width: 5%;
+	float: left;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+

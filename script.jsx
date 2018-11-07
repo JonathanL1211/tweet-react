@@ -3,13 +3,15 @@ class Tweets extends React.Component{
         console.log("TWEETS THIS.PROPS: ", this.props);
         return(
             <div>
-                <img src="ye.jpg"/>
+                <a className="hideDisplay">
+                    <img src="ye.jpg" className="image"/>
+                    <span className="showProfileNameOnHover">{this.props.details.user.screen_name}</span>
+                </a>
                 <div className="tweet-contents">
                     <h3><span>{this.props.details.user.name} </span><span>@{this.props.details.user.screen_name}</span></h3>
                     <p>{this.props.details.text}</p>
                     <p><span>Retweets: {this.props.details.retweet_count} | Liked: {this.props.details.favorite_count}</span></p>
                 </div>
-                <br/>
                 <hr/>
             </div>
         );

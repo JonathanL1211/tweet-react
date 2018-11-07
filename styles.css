@@ -5,14 +5,41 @@
 	margin-bottom: 10px;
 	margin-right: 10vw;
 	margin-left: 5vw;
-	background-color: pink;
+	background-color: white;
 	width: 60vw;
 }
 
-img{
+.image{
 	width: 5%;
 	float: left;
-	border: 1px solid black;
-	border-radius: 20px;
 }
+
+.hideDisplay{
+	z-index: 20;
+}
+
+a.hideDisplay:hover{
+	z-index: 30;
+}
+
+a.hideDisplay span.showProfileNameOnHover{
+	display: none;
+}
+
+a.hideDisplay:hover span.showProfileNameOnHover{
+	display: block;
+	font-size: 12px;
+	position: absolute;
+	left: 120px;
+	background-color: black;
+	color: white;
+
+}
+
+
+
+
+/*.tweet-contents:hover{
+	background-color: black;
+}*/
 
